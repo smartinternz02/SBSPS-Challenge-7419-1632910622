@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{AA4D056B-EA85-2361-AFB9-2E38AFBEB7FF}</ProjectGuid>
+    <ProjectGuid>{1183B853-8924-1B60-92F6-E02B5F97A831}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>VuforiaVersionCheckerScripts</AssemblyName>
+    <AssemblyName>Paroxe.PDFRenderer.Editor</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -48,15 +48,19 @@
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.8</UnityProjectGeneratorVersion>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2020.3.11f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Common\Editor\VersionChecker\VersionChecker.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Internal\Editor\WebGLPostBuild.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Internal\Editor\PDFImporterContextMenu.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Internal\Editor\PDFAssetEditor.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Internal\Editor\PRHelper.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Internal\Editor\PDFViewerEditor.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Common\Editor\VersionChecker\VuforiaVersionCheckerScripts.asmdef" />
+    <None Include="Assets\Lessons\Paroxe\PDFRenderer\Internal\Editor\Paroxe.PDFRenderer.Editor.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -721,6 +725,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Paroxe.PDFRenderer.csproj">
+      <Project>{F18C4A1C-030A-604D-3BAB-491FD1679312}</Project>
+      <Name>Paroxe.PDFRenderer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

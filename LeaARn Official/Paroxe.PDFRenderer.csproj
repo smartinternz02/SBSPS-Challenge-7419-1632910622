@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{AA4D056B-EA85-2361-AFB9-2E38AFBEB7FF}</ProjectGuid>
+    <ProjectGuid>{F18C4A1C-030A-604D-3BAB-491FD1679312}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>VuforiaVersionCheckerScripts</AssemblyName>
+    <AssemblyName>Paroxe.PDFRenderer</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -53,10 +53,63 @@
     <UnityVersion>2020.3.11f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Common\Editor\VersionChecker\VersionChecker.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Internal\Scripts\Viewer\PDFViewerPage.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Internal\Scripts\Viewer\PDFViewerLeftPanel.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\API\Action\PDFDest.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\API\Text\PDFSearchHandle.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Internal\Scripts\Viewer\PDFBookmarksViewer.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Internal\Scripts\Viewer\PDFBookmarkListItem.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\API\WebGL\IPDFJS_Promise.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Internal\Scripts\Viewer\PDFViewerSearchButton.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\API\PDFWebRequest.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\API\Text\PDFTextPage.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Internal\Scripts\PDFInternalUtils.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Examples\Scripts\ShowPersistentData.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Internal\Scripts\Viewer\PDFSearchPanel.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Internal\Scripts\WebGL\PDFJS_PromiseCoroutine.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Internal\Scripts\Viewer\PDFThumbnailItem.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\API\Rendering\PDFRenderer.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Internal\Scripts\Viewer\PDFViewerDefaultActionHandler.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\API\WebGL\PDFJS_Library.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Internal\Scripts\Viewer\PDFThumbnailsViewer.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\API\Action\PDFLink.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\API\Text\PDFSearchResult.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\API\Action\IPDFDeviceActionHandler.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Examples\Scripts\WebGL_API_Usage.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\API\PDFViewer.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Internal\Scripts\Viewer\PDFPageRange.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Internal\Scripts\NativeMethods.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\API\PDFAsset.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\API\PDFLibrary.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Internal\Scripts\Viewer\PDFViewerLeftPanelScrollbar.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\API\IPDFDevice.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Internal\Scripts\WebGL\PDFJS_WebGLCanvas.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\API\Text\PDFProgressiveSearch.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Examples\Scripts\PDFViewer_API_Usage.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\API\WebGL\PDFJS_Promise.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Internal\Scripts\Viewer\PDFViewerInternal.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\API\Action\PDFAction.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Examples\Scripts\API_Usage.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\API\PDFDocument.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Examples\Scripts\PDFDocumentRenderToTextureExample.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Internal\Scripts\Viewer\PDFPageTextureHolder.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\API\Action\PDFActionHandlerHelper.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Examples\Scripts\PDFBytesSupplierExample.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\API\PDFBookmark.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\API\PDFPage.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\Internal\Scripts\PDFBitmap.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\API\Rendering\PDFColoredRect.cs" />
+    <Compile Include="Assets\Lessons\Paroxe\PDFRenderer\API\Rendering\IPDFColoredRectListProvider.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Common\Editor\VersionChecker\VuforiaVersionCheckerScripts.asmdef" />
+    <None Include="Assets\Lessons\Paroxe\PDFRenderer\Plugins\x86\pdfrenderer.dll" />
+    <None Include="Assets\Lessons\Paroxe\PDFRenderer\Third-Party Notice.txt" />
+    <None Include="Assets\Lessons\Paroxe\PDFRenderer\Paroxe.PDFRenderer.asmdef" />
+    <None Include="Assets\Lessons\Paroxe\PDFRenderer\Plugins\UWP\ARM64\pdfrenderer.dll" />
+    <None Include="Assets\Lessons\Paroxe\PDFRenderer\Plugins\UWP\ARM\pdfrenderer.dll" />
+    <None Include="Assets\Lessons\Paroxe\PDFRenderer\Plugins\UWP\x86\pdfrenderer.dll" />
+    <None Include="Assets\Lessons\Paroxe\PDFRenderer\Plugins\x86_64\pdfrenderer.dll" />
+    <None Include="Assets\Lessons\Paroxe\PDFRenderer\Plugins\UWP\x64\pdfrenderer.dll" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -349,9 +402,6 @@
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.5.7\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.11f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -712,12 +762,6 @@
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TestRunner">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.TestRunner">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
